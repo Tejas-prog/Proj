@@ -1,0 +1,49 @@
+.image-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.file-input {
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.file-name {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.submit-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1565c0;
+}
+
+.coming-soon {
+  margin-top: 20px;
+  color: #e65100;
+  font-weight: bold;
+  font-size: 16px;
+}

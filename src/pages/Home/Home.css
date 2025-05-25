@@ -1,0 +1,65 @@
+/* Outer container with background image */
+.box {
+  background-image: url('img1.jpg'); /* Replace with actual image path or import */
+  background-size: cover;
+  background-position: bottom; /* Focus the image from the bottom */
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner container with options */
+.home-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.home-container h3 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Button container */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Common button styling */
+.button-group button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Specific button styles */
+.btn-chatbot {
+  background-color: #ff6b3e;
+}
+.btn-chatbot:hover {
+  background-color: #e2572d;
+}
+
+.btn-image {
+  background-color: #2196f3;
+}
+.btn-image:hover {
+  background-color: #0b7dda;
+}

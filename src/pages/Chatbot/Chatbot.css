@@ -1,0 +1,158 @@
+/* Make the chatbot occupy full screen */
+.outer {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #a8e063, #a1e97f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Main chatbot box */
+.chatbot-container {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 700px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.chatbot-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Chat messages container */
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* Individual chat bubbles */
+.chat-bubble {
+  padding: 12px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.chat-bubble.bot {
+  background-color: #c8e6c9;
+  align-self: flex-end;
+}
+
+/* Input section */
+.input-section {
+  margin-top: auto;
+}
+
+.answer-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Start screen */
+.start-screen {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.start-button {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-button:hover {
+  background-color: #2e7d32;
+}
+
+/* Summary & recommendation sections */
+.summary-section,
+.recommendation-section {
+  margin-top: 20px;
+  background-color: #f9fbe7;
+  padding: 15px;
+  border-radius: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.summary-section h3,
+.recommendation-section h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #33691e;
+}
+
+.summary-section ul,
+.recommendation-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.summary-section li,
+.recommendation-section li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.nextstage {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 12px 24px;        /* Some padding */
+  border: none;              /* Remove borders */
+  border-radius: 6px;        /* Rounded corners */
+  font-size: 16px;           /* Medium text size */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.nextstage:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05);    /* Slightly grow button */
+}
+
+.nextstage:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+  transform: scale(0.98);    /* Slight shrink on click */
+}
+.chat-bubble.user {
+  background-color: #d5f5d4;
+  color: #1a1a1a; /* dark color for readability */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
